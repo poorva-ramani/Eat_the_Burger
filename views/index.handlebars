@@ -1,0 +1,32 @@
+<img src="assets/img/burger_sandwich.png" alt="burger" height="200" width="200">
+<h1>Eat The Burger!!</h1>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">What would you like to eat today??</label>
+    <br>
+    <textarea type="text" id="ca" name="name" rows="4" cols="50" placeholder="Enter a burger you want to eat..."></textarea>
+  </div>
+
+  <button type="submit">Add The Burger</button>
+</form>
+
+<h2>Burgers left to Devour</h2>
+
+<ul class="w3-ul" style="width:50%">
+  {{#each burger}}
+    {{#unless devoured}}
+      {{> burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Order Again!!!</h2>
+
+<ul class="w3-ul" style="width:50%">
+  {{#each burger}}
+    {{#if devoured}}
+      {{> burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
