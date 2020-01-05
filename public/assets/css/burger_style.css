@@ -11,7 +11,10 @@ li {
   list-style-type: none;
   text-align: left;
 }
-  
+
+h3{
+  text-align: left;
+}
 label {
   font-weight: bold;
 }
