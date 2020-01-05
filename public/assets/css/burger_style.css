@@ -9,6 +9,7 @@ li {
   width: 500px;
   background: #faebd7;
   list-style-type: none;
+  text-align: left;
 }
   
 label {
